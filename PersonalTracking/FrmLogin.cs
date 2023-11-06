@@ -21,5 +21,10 @@ namespace PersonalTracking
         {
             Application.Exit();
         }
+
+        private void FrmLogin_Load(object sender, EventArgs e)
+        {
+
+        }
     }
 }

@@ -111,7 +111,8 @@
             Controls.Add(txtUserNo);
             Controls.Add(label1);
             Name = "FrmLogin";
-            Text = "Form1";
+            Text = "Login";
+            Load += FrmLogin_Load;
             ResumeLayout(false);
             PerformLayout();
         }
