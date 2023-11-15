@@ -33,7 +33,7 @@
             btnClose = new Button();
             btnDelete = new Button();
             btnUpdate = new Button();
-            btnAdd = new Button();
+            btnNew = new Button();
             txtUserNo = new TextBox();
             label1 = new Label();
             txtName = new TextBox();
@@ -64,7 +64,7 @@
             panel1.Controls.Add(btnClose);
             panel1.Controls.Add(btnDelete);
             panel1.Controls.Add(btnUpdate);
-            panel1.Controls.Add(btnAdd);
+            panel1.Controls.Add(btnNew);
             panel1.Dock = DockStyle.Bottom;
             panel1.Location = new Point(0, 413);
             panel1.Name = "panel1";
@@ -80,6 +80,7 @@
             btnClose.TabIndex = 3;
             btnClose.Text = "Close";
             btnClose.UseVisualStyleBackColor = true;
+            btnClose.Click += btnClose_Click;
             // 
             // btnDelete
             // 
@@ -100,16 +101,18 @@
             btnUpdate.TabIndex = 1;
             btnUpdate.Text = "Update";
             btnUpdate.UseVisualStyleBackColor = true;
+            btnUpdate.Click += btnUpdate_Click;
             // 
-            // btnAdd
+            // btnNew
             // 
-            btnAdd.Font = new Font("Segoe UI", 12F, FontStyle.Bold, GraphicsUnit.Point);
-            btnAdd.Location = new Point(194, 25);
-            btnAdd.Name = "btnAdd";
-            btnAdd.Size = new Size(87, 31);
-            btnAdd.TabIndex = 0;
-            btnAdd.Text = "Add";
-            btnAdd.UseVisualStyleBackColor = true;
+            btnNew.Font = new Font("Segoe UI", 12F, FontStyle.Bold, GraphicsUnit.Point);
+            btnNew.Location = new Point(194, 25);
+            btnNew.Name = "btnNew";
+            btnNew.Size = new Size(87, 31);
+            btnNew.TabIndex = 0;
+            btnNew.Text = "New";
+            btnNew.UseVisualStyleBackColor = true;
+            btnNew.Click += btnNew_Click;
             // 
             // txtUserNo
             // 
@@ -250,7 +253,8 @@
             Controls.Add(panel1);
             Controls.Add(dataGridView1);
             Name = "FrmEmployeeList";
-            Text = "FrmEmployeeList";
+            StartPosition = FormStartPosition.CenterScreen;
+            Text = "Employee List";
             ((System.ComponentModel.ISupportInitialize)dataGridView1).EndInit();
             panel1.ResumeLayout(false);
             ResumeLayout(false);
@@ -277,5 +281,6 @@
         private Label label4;
         private Button btnSearch;
         private Button btnClear;
+        private Button btnNew;
     }
 }

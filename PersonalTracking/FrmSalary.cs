@@ -10,31 +10,31 @@ using System.Windows.Forms;
 
 namespace PersonalTracking
 {
-    public partial class FrmEmployee : Form
+    public partial class FrmSalary : Form
     {
-        public FrmEmployee()
+        public FrmSalary()
         {
             InitializeComponent();
+        }
+
+        private void btnClose_KeyPress(object sender, KeyPressEventArgs e)
+        {
+            this.Close();
+        }
+
+        private void TxtSalary_KeyPress(object sender, KeyPressEventArgs e)
+        {
+            e.Handled = General.isNumber(e);
+        }
+
+        private void FrmSalary_Load(object sender, EventArgs e)
+        {
+
         }
 
         private void btnClose_Click(object sender, EventArgs e)
         {
             this.Close();
-        }
-
-        private void txtUserNo_KeyPress(object sender, KeyPressEventArgs e)
-        {
-            e.Handled = General.isNumber(e);
-        }
-
-        private void txtSalary_KeyPress(object sender, KeyPressEventArgs e)
-        {
-            e.Handled |= General.isNumber(e);
-        }
-
-        private void pictureBox1_Click(object sender, EventArgs e)
-        {
-
         }
     }
 }

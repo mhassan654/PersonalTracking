@@ -30,10 +30,10 @@
         {
             dataGridView1 = new DataGridView();
             panel1 = new Panel();
-            btnAdd = new Button();
-            btnUpdate = new Button();
-            btnDelete = new Button();
             btnClose = new Button();
+            btnDelete = new Button();
+            btnUpdate = new Button();
+            btnNew = new Button();
             ((System.ComponentModel.ISupportInitialize)dataGridView1).BeginInit();
             panel1.SuspendLayout();
             SuspendLayout();
@@ -53,42 +53,12 @@
             panel1.Controls.Add(btnClose);
             panel1.Controls.Add(btnDelete);
             panel1.Controls.Add(btnUpdate);
-            panel1.Controls.Add(btnAdd);
+            panel1.Controls.Add(btnNew);
             panel1.Dock = DockStyle.Bottom;
             panel1.Location = new Point(0, 384);
             panel1.Name = "panel1";
             panel1.Size = new Size(462, 56);
             panel1.TabIndex = 1;
-            // 
-            // btnAdd
-            // 
-            btnAdd.Font = new Font("Segoe UI", 12F, FontStyle.Bold, GraphicsUnit.Point);
-            btnAdd.Location = new Point(12, 13);
-            btnAdd.Name = "btnAdd";
-            btnAdd.Size = new Size(87, 31);
-            btnAdd.TabIndex = 0;
-            btnAdd.Text = "Add";
-            btnAdd.UseVisualStyleBackColor = true;
-            // 
-            // btnUpdate
-            // 
-            btnUpdate.Font = new Font("Segoe UI", 12F, FontStyle.Bold, GraphicsUnit.Point);
-            btnUpdate.Location = new Point(129, 13);
-            btnUpdate.Name = "btnUpdate";
-            btnUpdate.Size = new Size(87, 31);
-            btnUpdate.TabIndex = 1;
-            btnUpdate.Text = "Update";
-            btnUpdate.UseVisualStyleBackColor = true;
-            // 
-            // btnDelete
-            // 
-            btnDelete.Font = new Font("Segoe UI", 12F, FontStyle.Bold, GraphicsUnit.Point);
-            btnDelete.Location = new Point(245, 13);
-            btnDelete.Name = "btnDelete";
-            btnDelete.Size = new Size(87, 31);
-            btnDelete.TabIndex = 2;
-            btnDelete.Text = "Delete";
-            btnDelete.UseVisualStyleBackColor = true;
             // 
             // btnClose
             // 
@@ -100,6 +70,38 @@
             btnClose.Text = "Close";
             btnClose.UseVisualStyleBackColor = true;
             btnClose.Click += btnClose_Click;
+            // 
+            // btnDelete
+            // 
+            btnDelete.Font = new Font("Segoe UI", 12F, FontStyle.Bold, GraphicsUnit.Point);
+            btnDelete.Location = new Point(245, 13);
+            btnDelete.Name = "btnDelete";
+            btnDelete.Size = new Size(87, 31);
+            btnDelete.TabIndex = 2;
+            btnDelete.Text = "Delete";
+            btnDelete.UseVisualStyleBackColor = true;
+            // 
+            // btnUpdate
+            // 
+            btnUpdate.Font = new Font("Segoe UI", 12F, FontStyle.Bold, GraphicsUnit.Point);
+            btnUpdate.Location = new Point(129, 13);
+            btnUpdate.Name = "btnUpdate";
+            btnUpdate.Size = new Size(87, 31);
+            btnUpdate.TabIndex = 1;
+            btnUpdate.Text = "Update";
+            btnUpdate.UseVisualStyleBackColor = true;
+            btnUpdate.Click += btnUpdate_Click;
+            // 
+            // btnNew
+            // 
+            btnNew.Font = new Font("Segoe UI", 12F, FontStyle.Bold, GraphicsUnit.Point);
+            btnNew.Location = new Point(12, 13);
+            btnNew.Name = "btnNew";
+            btnNew.Size = new Size(87, 31);
+            btnNew.TabIndex = 0;
+            btnNew.Text = "New";
+            btnNew.UseVisualStyleBackColor = true;
+            btnNew.Click += btnNew_Click;
             // 
             // FrmDepartmentList
             // 
@@ -124,5 +126,6 @@
         private Button btnUpdate;
         private Button btnAdd;
         private Button btnClose;
+        private Button btnNew;
     }
 }

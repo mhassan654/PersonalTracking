@@ -10,30 +10,11 @@ using System.Windows.Forms;
 
 namespace PersonalTracking
 {
-    public partial class FrmEmployeeList : Form
+    public partial class FrmSalaryList : Form
     {
-        public FrmEmployeeList()
+        public FrmSalaryList()
         {
             InitializeComponent();
-        }
-
-        private void txtUserNo_TextChanged(object sender, EventArgs e)
-        {
-
-        }
-
-        private void txtUserNo_KeyPress(object sender, KeyPressEventArgs e)
-        {
-            e.Handled = General.isNumber(e);
-        }
-
-        private void label2_Click(object sender, EventArgs e)
-        {
-
-        }
-
-        private void textBox1_TextChanged(object sender, EventArgs e)
-        {
         }
 
         private void btnClose_Click(object sender, EventArgs e)
@@ -43,17 +24,22 @@ namespace PersonalTracking
 
         private void btnNew_Click(object sender, EventArgs e)
         {
-            FrmEmployee frm = new FrmEmployee();
+            FrmSalary list = new FrmSalary();
             this.Hide();
-            frm.ShowDialog();
+            list.ShowDialog();
             this.Visible = true;
+        }
+
+        private void btnClose_Click_1(object sender, EventArgs e)
+        {
+            this.Close();
         }
 
         private void btnUpdate_Click(object sender, EventArgs e)
         {
-            FrmEmployee frm = new FrmEmployee();
+            FrmSalary list = new FrmSalary();
             this.Hide();
-            frm.ShowDialog();
+            list.ShowDialog();
             this.Visible = true;
         }
     }

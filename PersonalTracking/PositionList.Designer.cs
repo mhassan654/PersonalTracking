@@ -32,7 +32,7 @@
             panel1 = new Panel();
             btnClose = new Button();
             btnDelete = new Button();
-            btnAdd = new Button();
+            btnNew = new Button();
             btnUpdate = new Button();
             ((System.ComponentModel.ISupportInitialize)dataGridView1).BeginInit();
             panel1.SuspendLayout();
@@ -52,7 +52,7 @@
             // 
             panel1.Controls.Add(btnClose);
             panel1.Controls.Add(btnDelete);
-            panel1.Controls.Add(btnAdd);
+            panel1.Controls.Add(btnNew);
             panel1.Controls.Add(btnUpdate);
             panel1.Dock = DockStyle.Bottom;
             panel1.Location = new Point(0, 319);
@@ -81,15 +81,16 @@
             btnDelete.Text = "Delete";
             btnDelete.UseVisualStyleBackColor = true;
             // 
-            // btnAdd
+            // btnNew
             // 
-            btnAdd.Font = new Font("Segoe UI", 12F, FontStyle.Bold, GraphicsUnit.Point);
-            btnAdd.Location = new Point(16, 16);
-            btnAdd.Name = "btnAdd";
-            btnAdd.Size = new Size(87, 31);
-            btnAdd.TabIndex = 0;
-            btnAdd.Text = "Add";
-            btnAdd.UseVisualStyleBackColor = true;
+            btnNew.Font = new Font("Segoe UI", 12F, FontStyle.Bold, GraphicsUnit.Point);
+            btnNew.Location = new Point(16, 16);
+            btnNew.Name = "btnNew";
+            btnNew.Size = new Size(87, 31);
+            btnNew.TabIndex = 0;
+            btnNew.Text = "New";
+            btnNew.UseVisualStyleBackColor = true;
+            btnNew.Click += btnNew_Click;
             // 
             // btnUpdate
             // 
@@ -100,6 +101,7 @@
             btnUpdate.TabIndex = 1;
             btnUpdate.Text = "Update";
             btnUpdate.UseVisualStyleBackColor = true;
+            btnUpdate.Click += btnUpdate_Click;
             // 
             // PositionList
             // 
@@ -122,7 +124,7 @@
         private Panel panel1;
         private Button btnClose;
         private Button btnDelete;
-        private Button btnAdd;
+        private Button btnNew;
         private Button btnUpdate;
     }
 }

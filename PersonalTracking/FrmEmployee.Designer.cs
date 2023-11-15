@@ -71,7 +71,7 @@
             panel1.Dock = DockStyle.Top;
             panel1.Location = new Point(0, 0);
             panel1.Name = "panel1";
-            panel1.Size = new Size(769, 100);
+            panel1.Size = new Size(769, 70);
             panel1.TabIndex = 0;
             // 
             // chkAdmin
@@ -135,7 +135,7 @@
             // txtName
             // 
             txtName.BorderStyle = BorderStyle.None;
-            txtName.Location = new Point(137, 143);
+            txtName.Location = new Point(137, 98);
             txtName.Name = "txtName";
             txtName.Size = new Size(167, 16);
             txtName.TabIndex = 0;
@@ -144,7 +144,7 @@
             // 
             label3.AutoSize = true;
             label3.Font = new Font("Segoe UI", 12F, FontStyle.Bold, GraphicsUnit.Point);
-            label3.Location = new Point(12, 141);
+            label3.Location = new Point(12, 96);
             label3.Name = "label3";
             label3.Size = new Size(56, 21);
             label3.TabIndex = 5;
@@ -153,7 +153,7 @@
             // textBox2
             // 
             textBox2.BorderStyle = BorderStyle.None;
-            textBox2.Location = new Point(137, 231);
+            textBox2.Location = new Point(137, 186);
             textBox2.Name = "textBox2";
             textBox2.Size = new Size(167, 16);
             textBox2.TabIndex = 2;
@@ -162,7 +162,7 @@
             // 
             label4.AutoSize = true;
             label4.Font = new Font("Segoe UI", 12F, FontStyle.Bold, GraphicsUnit.Point);
-            label4.Location = new Point(12, 226);
+            label4.Location = new Point(12, 181);
             label4.Name = "label4";
             label4.Size = new Size(97, 21);
             label4.TabIndex = 7;
@@ -171,7 +171,7 @@
             // txtSurname
             // 
             txtSurname.BorderStyle = BorderStyle.None;
-            txtSurname.Location = new Point(137, 185);
+            txtSurname.Location = new Point(137, 140);
             txtSurname.Name = "txtSurname";
             txtSurname.Size = new Size(167, 16);
             txtSurname.TabIndex = 1;
@@ -180,7 +180,7 @@
             // 
             label5.AutoSize = true;
             label5.Font = new Font("Segoe UI", 12F, FontStyle.Bold, GraphicsUnit.Point);
-            label5.Location = new Point(12, 183);
+            label5.Location = new Point(12, 138);
             label5.Name = "label5";
             label5.Size = new Size(78, 21);
             label5.TabIndex = 9;
@@ -188,11 +188,12 @@
             // 
             // pictureBox1
             // 
-            pictureBox1.Location = new Point(487, 122);
+            pictureBox1.Location = new Point(487, 98);
             pictureBox1.Name = "pictureBox1";
             pictureBox1.Size = new Size(145, 148);
             pictureBox1.TabIndex = 11;
             pictureBox1.TabStop = false;
+            pictureBox1.Click += pictureBox1_Click;
             // 
             // openFileDialog1
             // 
@@ -200,7 +201,7 @@
             // 
             // btnBrowse
             // 
-            btnBrowse.Location = new Point(322, 227);
+            btnBrowse.Location = new Point(322, 182);
             btnBrowse.Name = "btnBrowse";
             btnBrowse.Size = new Size(75, 23);
             btnBrowse.TabIndex = 3;
@@ -210,7 +211,7 @@
             // txtSalary
             // 
             txtSalary.BorderStyle = BorderStyle.None;
-            txtSalary.Location = new Point(137, 272);
+            txtSalary.Location = new Point(137, 227);
             txtSalary.Name = "txtSalary";
             txtSalary.Size = new Size(167, 16);
             txtSalary.TabIndex = 4;
@@ -220,7 +221,7 @@
             // 
             label6.AutoSize = true;
             label6.Font = new Font("Segoe UI", 12F, FontStyle.Bold, GraphicsUnit.Point);
-            label6.Location = new Point(12, 270);
+            label6.Location = new Point(12, 225);
             label6.Name = "label6";
             label6.Size = new Size(58, 21);
             label6.TabIndex = 13;
@@ -230,7 +231,7 @@
             // 
             cmbDepartment.Font = new Font("Segoe UI", 12F, FontStyle.Bold, GraphicsUnit.Point);
             cmbDepartment.FormattingEnabled = true;
-            cmbDepartment.Location = new Point(137, 307);
+            cmbDepartment.Location = new Point(137, 262);
             cmbDepartment.Name = "cmbDepartment";
             cmbDepartment.Size = new Size(167, 29);
             cmbDepartment.TabIndex = 5;
@@ -239,7 +240,7 @@
             // 
             label7.AutoSize = true;
             label7.Font = new Font("Segoe UI", 12F, FontStyle.Bold, GraphicsUnit.Point);
-            label7.Location = new Point(12, 307);
+            label7.Location = new Point(12, 262);
             label7.Name = "label7";
             label7.Size = new Size(102, 21);
             label7.TabIndex = 16;
@@ -249,7 +250,7 @@
             // 
             cmbPosition.Font = new Font("Segoe UI", 12F, FontStyle.Bold, GraphicsUnit.Point);
             cmbPosition.FormattingEnabled = true;
-            cmbPosition.Location = new Point(137, 353);
+            cmbPosition.Location = new Point(137, 308);
             cmbPosition.Name = "cmbPosition";
             cmbPosition.Size = new Size(167, 29);
             cmbPosition.TabIndex = 6;
@@ -258,7 +259,7 @@
             // 
             label8.AutoSize = true;
             label8.Font = new Font("Segoe UI", 12F, FontStyle.Bold, GraphicsUnit.Point);
-            label8.Location = new Point(12, 356);
+            label8.Location = new Point(12, 311);
             label8.Name = "label8";
             label8.Size = new Size(73, 21);
             label8.TabIndex = 18;
@@ -268,7 +269,7 @@
             // 
             label9.AutoSize = true;
             label9.Font = new Font("Segoe UI", 12F, FontStyle.Bold, GraphicsUnit.Point);
-            label9.Location = new Point(12, 396);
+            label9.Location = new Point(12, 351);
             label9.Name = "label9";
             label9.Size = new Size(77, 21);
             label9.TabIndex = 19;
@@ -276,7 +277,7 @@
             // 
             // dateTimePicker1
             // 
-            dateTimePicker1.Location = new Point(137, 396);
+            dateTimePicker1.Location = new Point(137, 351);
             dateTimePicker1.Name = "dateTimePicker1";
             dateTimePicker1.Size = new Size(167, 23);
             dateTimePicker1.TabIndex = 7;
@@ -284,7 +285,7 @@
             // txtAddress
             // 
             txtAddress.BorderStyle = BorderStyle.None;
-            txtAddress.Location = new Point(137, 437);
+            txtAddress.Location = new Point(137, 392);
             txtAddress.Multiline = true;
             txtAddress.Name = "txtAddress";
             txtAddress.Size = new Size(495, 139);
@@ -294,7 +295,7 @@
             // 
             label10.AutoSize = true;
             label10.Font = new Font("Segoe UI", 12F, FontStyle.Bold, GraphicsUnit.Point);
-            label10.Location = new Point(12, 435);
+            label10.Location = new Point(12, 390);
             label10.Name = "label10";
             label10.Size = new Size(70, 21);
             label10.TabIndex = 21;
@@ -305,7 +306,7 @@
             btnClose.BackColor = Color.FromArgb(0, 0, 192);
             btnClose.Font = new Font("Segoe UI", 12F, FontStyle.Bold, GraphicsUnit.Point);
             btnClose.ForeColor = Color.White;
-            btnClose.Location = new Point(476, 612);
+            btnClose.Location = new Point(476, 567);
             btnClose.Name = "btnClose";
             btnClose.Size = new Size(100, 40);
             btnClose.TabIndex = 10;
@@ -316,7 +317,7 @@
             // btnSave
             // 
             btnSave.Font = new Font("Segoe UI", 12F, FontStyle.Bold, GraphicsUnit.Point);
-            btnSave.Location = new Point(295, 612);
+            btnSave.Location = new Point(295, 567);
             btnSave.Name = "btnSave";
             btnSave.Size = new Size(102, 40);
             btnSave.TabIndex = 9;
@@ -350,7 +351,8 @@
             Controls.Add(label3);
             Controls.Add(panel1);
             Name = "FrmEmployee";
-            Text = "FrmEmployee";
+            StartPosition = FormStartPosition.CenterScreen;
+            Text = "Employee Form";
             panel1.ResumeLayout(false);
             panel1.PerformLayout();
             ((System.ComponentModel.ISupportInitialize)pictureBox1).EndInit();

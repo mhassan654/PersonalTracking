@@ -10,16 +10,11 @@ using System.Windows.Forms;
 
 namespace PersonalTracking
 {
-    public partial class FrmTaskList : Form
+    public partial class FrmPermissionsList : Form
     {
-        public FrmTaskList()
+        public FrmPermissionsList()
         {
             InitializeComponent();
-        }
-
-        private void btnClose_Click(object sender, EventArgs e)
-        {
-            this.Close();
         }
 
         private void txtUserNo_KeyPress(object sender, KeyPressEventArgs e)
@@ -27,20 +22,19 @@ namespace PersonalTracking
             e.Handled = General.isNumber(e);
         }
 
+        private void TxtDayAmount_KeyPress(object sender, KeyPressEventArgs e)
+        {
+            e.Handled = General.isNumber(e);
+        }
 
-        private void btnClose_KeyPress(object sender, KeyPressEventArgs e)
+        private void BtnClose_KeyPress(object sender, KeyPressEventArgs e)
         {
             this.Close();
         }
 
-        private void FrmTaskList_Load(object sender, EventArgs e)
-        {
-            pnlForAdmin.Hide();
-        }
-
         private void btnNew_Click(object sender, EventArgs e)
         {
-            FrmTask frm = new FrmTask();
+            FrmPermissions frm = new FrmPermissions();
             this.Hide();
             frm.ShowDialog();
             this.Visible = true;
@@ -48,10 +42,15 @@ namespace PersonalTracking
 
         private void btnUpdate_Click(object sender, EventArgs e)
         {
-            FrmTask frm = new FrmTask();
+            FrmPermissions frm = new FrmPermissions();
             this.Hide();
             frm.ShowDialog();
             this.Visible = true;
+        }
+
+        private void BtnClose_Click(object sender, EventArgs e)
+        {
+            this.Close();
         }
     }
 }

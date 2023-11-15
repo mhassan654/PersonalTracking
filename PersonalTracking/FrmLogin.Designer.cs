@@ -79,19 +79,20 @@
             btnEnter.BackColor = Color.Teal;
             btnEnter.Font = new Font("Segoe UI", 12F, FontStyle.Bold, GraphicsUnit.Point);
             btnEnter.ForeColor = Color.White;
-            btnEnter.Location = new Point(86, 246);
+            btnEnter.Location = new Point(311, 246);
             btnEnter.Name = "btnEnter";
             btnEnter.Size = new Size(85, 35);
             btnEnter.TabIndex = 4;
-            btnEnter.Text = "Enter";
+            btnEnter.Text = "Login";
             btnEnter.UseVisualStyleBackColor = false;
+            btnEnter.Click += btnEnter_Click;
             // 
             // btnExit
             // 
             btnExit.BackColor = Color.Red;
             btnExit.Font = new Font("Segoe UI", 12F, FontStyle.Bold, GraphicsUnit.Point);
             btnExit.ForeColor = Color.White;
-            btnExit.Location = new Point(279, 246);
+            btnExit.Location = new Point(167, 246);
             btnExit.Name = "btnExit";
             btnExit.Size = new Size(91, 35);
             btnExit.TabIndex = 5;
@@ -110,7 +111,9 @@
             Controls.Add(label2);
             Controls.Add(txtUserNo);
             Controls.Add(label1);
+            FormBorderStyle = FormBorderStyle.FixedDialog;
             Name = "FrmLogin";
+            StartPosition = FormStartPosition.CenterScreen;
             Text = "Login";
             Load += FrmLogin_Load;
             ResumeLayout(false);
