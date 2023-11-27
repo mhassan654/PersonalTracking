@@ -1,6 +1,4 @@
-﻿using BLL;
-using DAL;
-using System;
+﻿using System;
 using System.Collections.Generic;
 using System.ComponentModel;
 using System.Data;
@@ -12,30 +10,31 @@ using System.Windows.Forms;
 
 namespace PersonalTracking
 {
-    public partial class Department : Form
+    public partial class FrmSalary : Form
     {
-        public Department()
+        public FrmSalary()
         {
             InitializeComponent();
         }
 
-        private void label1_Click(object sender, EventArgs e)
+        private void btnClose_KeyPress(object sender, KeyPressEventArgs e)
         {
-
+            this.Close();
         }
 
-        private void btnSave_Click(object sender, EventArgs e)
+        private void TxtSalary_KeyPress(object sender, KeyPressEventArgs e)
         {
-            DEPARTMENT department = new DEPARTMENT();
-            department.DepartmentName=txtDepartment.Text;
-            DepartmentBLL.AddDepartment(department);
+            e.Handled = General.isNumber(e);
+        }
+
+        private void FrmSalary_Load(object sender, EventArgs e)
+        {
+
         }
 
         private void btnClose_Click(object sender, EventArgs e)
         {
             this.Close();
         }
-
-
     }
 }

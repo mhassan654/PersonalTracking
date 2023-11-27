@@ -51,7 +51,7 @@
             btnEmployee.Text = "Employees";
             btnEmployee.TextAlign = ContentAlignment.BottomCenter;
             btnEmployee.UseVisualStyleBackColor = false;
-            btnEmployee.Click += button1_Click;
+            btnEmployee.Click += btnEmployee_Click;
             // 
             // btnTasks
             // 
@@ -65,7 +65,7 @@
             btnTasks.Text = "Tasks";
             btnTasks.TextAlign = ContentAlignment.BottomCenter;
             btnTasks.UseVisualStyleBackColor = false;
-            btnTasks.Click += button2_Click;
+            btnTasks.Click += btnTasks_Click;
             // 
             // btnSalary
             // 
@@ -79,6 +79,7 @@
             btnSalary.Text = "Salary";
             btnSalary.TextAlign = ContentAlignment.BottomCenter;
             btnSalary.UseVisualStyleBackColor = false;
+            btnSalary.Click += btnSalary_Click;
             // 
             // btnPosition
             // 
@@ -92,6 +93,7 @@
             btnPosition.Text = "Position";
             btnPosition.TextAlign = ContentAlignment.BottomCenter;
             btnPosition.UseVisualStyleBackColor = false;
+            btnPosition.Click += btnPosition_Click;
             // 
             // btnDepartment
             // 
@@ -105,6 +107,7 @@
             btnDepartment.Text = "Department";
             btnDepartment.TextAlign = ContentAlignment.BottomCenter;
             btnDepartment.UseVisualStyleBackColor = false;
+            btnDepartment.Click += btnDepartment_Click;
             // 
             // btnPermissions
             // 
@@ -118,6 +121,7 @@
             btnPermissions.Text = "Permissions";
             btnPermissions.TextAlign = ContentAlignment.BottomCenter;
             btnPermissions.UseVisualStyleBackColor = false;
+            btnPermissions.Click += btnPermissions_Click;
             // 
             // btnLogout
             // 
@@ -131,6 +135,7 @@
             btnLogout.Text = "LogOut";
             btnLogout.TextAlign = ContentAlignment.BottomCenter;
             btnLogout.UseVisualStyleBackColor = false;
+            btnLogout.Click += btnLogout_Click;
             // 
             // btnExit
             // 
@@ -148,7 +153,7 @@
             // 
             AutoScaleDimensions = new SizeF(8F, 17F);
             AutoScaleMode = AutoScaleMode.Font;
-            ClientSize = new Size(914, 510);
+            ClientSize = new Size(442, 422);
             Controls.Add(btnExit);
             Controls.Add(btnLogout);
             Controls.Add(btnPosition);
@@ -158,8 +163,11 @@
             Controls.Add(btnTasks);
             Controls.Add(btnEmployee);
             Font = new Font("Segoe UI", 10F, FontStyle.Bold, GraphicsUnit.Point);
+            FormBorderStyle = FormBorderStyle.FixedDialog;
             Name = "FrmMain";
+            StartPosition = FormStartPosition.CenterScreen;
             Text = "Employee Tracking";
+            FormClosed += FrmMain_FormClosed;
             ResumeLayout(false);
         }
 

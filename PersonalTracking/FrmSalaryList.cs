@@ -10,9 +10,9 @@ using System.Windows.Forms;
 
 namespace PersonalTracking
 {
-    public partial class FrmDepartmentList : Form
+    public partial class FrmSalaryList : Form
     {
-        public FrmDepartmentList()
+        public FrmSalaryList()
         {
             InitializeComponent();
         }
@@ -24,17 +24,22 @@ namespace PersonalTracking
 
         private void btnNew_Click(object sender, EventArgs e)
         {
-            Department frm = new Department();
+            FrmSalary list = new FrmSalary();
             this.Hide();
-            frm.ShowDialog();
+            list.ShowDialog();
             this.Visible = true;
+        }
+
+        private void btnClose_Click_1(object sender, EventArgs e)
+        {
+            this.Close();
         }
 
         private void btnUpdate_Click(object sender, EventArgs e)
         {
-            Department frm = new Department();
+            FrmSalary list = new FrmSalary();
             this.Hide();
-            frm.ShowDialog();
+            list.ShowDialog();
             this.Visible = true;
         }
     }

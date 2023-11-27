@@ -10,21 +10,31 @@ using System.Windows.Forms;
 
 namespace PersonalTracking
 {
-    public partial class FrmDepartmentList : Form
+    public partial class FrmPermissionsList : Form
     {
-        public FrmDepartmentList()
+        public FrmPermissionsList()
         {
             InitializeComponent();
         }
 
-        private void btnClose_Click(object sender, EventArgs e)
+        private void txtUserNo_KeyPress(object sender, KeyPressEventArgs e)
+        {
+            e.Handled = General.isNumber(e);
+        }
+
+        private void TxtDayAmount_KeyPress(object sender, KeyPressEventArgs e)
+        {
+            e.Handled = General.isNumber(e);
+        }
+
+        private void BtnClose_KeyPress(object sender, KeyPressEventArgs e)
         {
             this.Close();
         }
 
         private void btnNew_Click(object sender, EventArgs e)
         {
-            Department frm = new Department();
+            FrmPermissions frm = new FrmPermissions();
             this.Hide();
             frm.ShowDialog();
             this.Visible = true;
@@ -32,10 +42,15 @@ namespace PersonalTracking
 
         private void btnUpdate_Click(object sender, EventArgs e)
         {
-            Department frm = new Department();
+            FrmPermissions frm = new FrmPermissions();
             this.Hide();
             frm.ShowDialog();
             this.Visible = true;
+        }
+
+        private void BtnClose_Click(object sender, EventArgs e)
+        {
+            this.Close();
         }
     }
 }

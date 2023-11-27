@@ -85,6 +85,7 @@
             btnEnter.TabIndex = 4;
             btnEnter.Text = "Enter";
             btnEnter.UseVisualStyleBackColor = false;
+            btnEnter.Click += btnEnter_Click;
             // 
             // btnExit
             // 
