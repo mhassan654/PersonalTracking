@@ -7,6 +7,8 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
+using BLL;
+using DAL;
 
 namespace PersonalTracking
 {
@@ -24,7 +26,9 @@ namespace PersonalTracking
 
         private void btnSave_Click(object sender, EventArgs e)
         {
-
+            DEPARTMENT department = new DEPARTMENT();
+            department.DepartmentName=txtDepartment.Text;
+            BLL.DepartmentBLL.AddDepartment(department);
         }
 
         private void btnClose_Click(object sender, EventArgs e)
